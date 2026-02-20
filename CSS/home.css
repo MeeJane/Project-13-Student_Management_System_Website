@@ -1,6 +1,6 @@
 /* ===== NAVBAR CONTAINER ===== */
 .home-nav-container {
-    width: 100vw;
+    width: 110vw;
     height: 65px;
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@
 /* footer */
 /* ================= FOOTER CONTAINER ================= */
 .home-footer-container {
-    width: 100vw;
+    width: 110vw;
     height: 200px;
     background: #4D7399;
 
