@@ -1,0 +1,173 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.admin-fees-page {
+    height: 710px;
+}
+
+.admin-fees-container {
+    padding: 60px 48px;
+}
+
+/* TITLE */
+.admin-fees-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+/* SUB TITLE */
+.admin-fees-subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #0D141C;
+    margin-bottom: 40px;
+}
+
+/* TABLE WRAPPER */
+.admin-fees-table-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* TABLE */
+.admin-fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #F7FAFC;
+}
+
+/* HEADER */
+.admin-fees-thead {
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px #00000040;
+    border: 1px solid #4D7399;
+
+
+}
+
+.admin-fees-thead tr {
+    border: 1px solid #4D7399;
+    padding-top: 30px;
+}
+
+.admin-fees-thead th {
+    height: 46px;
+    padding: 20px 16px;
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D141C;
+
+}
+
+/* ROWS */
+.admin-fees-table tbody tr {
+    height: 72px;
+    border-top: 1px solid #E5E8EB;
+}
+
+/* CELLS */
+.admin-fees-table td {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* COLUMN COLORS */
+.admin-fees-col1 {
+    color: #0D141C;
+    font-weight: 400;
+}
+
+.admin-fees-col2 {
+    color: #4D7399;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .admin-fees-page {
+        height: auto;
+    }
+
+    .admin-fees-container {
+        padding: 50px 32px;
+    }
+
+    .admin-fees-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .admin-fees-subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* ---------- TABLE ---------- */
+    .admin-fees-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        /* allows horizontal scroll */
+    }
+
+    .admin-fees-table {
+        min-width: 800px;
+        /* keeps columns readable */
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .admin-fees-container {
+        padding: 30px 16px;
+    }
+
+    .admin-fees-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .admin-fees-subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* scrollable table */
+    .admin-fees-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .admin-fees-table {
+        min-width: 650px;
+    }
+
+    /* slightly tighter table text */
+    .admin-fees-table td,
+    .admin-fees-thead th {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}

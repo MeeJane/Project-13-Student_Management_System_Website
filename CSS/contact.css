@@ -1,0 +1,219 @@
+/* ================= CONTACT PAGE ================= */
+
+.contact-container {
+    width: 100%;
+    height: 1306px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITLE */
+.contact-title {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #0D141C;
+}
+
+/* INTRO TEXT */
+.contact-intro {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4D7399;
+    margin-top: 8px;
+    max-width: 1275px;
+}
+
+/* SUB TITLES */
+.contact-subtitle {
+    margin-top: 40px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #0D141C;
+}
+
+/* INFO ROW */
+.contact-info-row {
+    display: flex;
+    gap: 120px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E8EF;
+}
+
+.contact-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-info-label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.contact-info-text {
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    color: #0D141C;
+}
+
+/* OFFICE HOURS */
+.contact-office {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E8EF;
+}
+
+/* FORM */
+.contact-form {
+    margin-top: 25px;
+    width: 448px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* LABEL */
+.contact-label {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D141C;
+}
+
+/* INPUT */
+.contact-input {
+    width: 448px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    padding-left: 15px;
+
+    background: #F7FAFC;
+
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+}
+
+.contact-input::placeholder {
+    color: #4D7399;
+}
+
+/* MESSAGE FIELD */
+.contact-message {
+    width: 448px;
+    min-height: 144px;
+    border-radius: 8px;
+    border: 1px solid #CFDBE8;
+    padding-left: 15px;
+    background: #F7FAFC;
+    resize: none;
+
+    font-family: 'Lexend', sans-serif;
+}
+
+/* BUTTON */
+.contact-btn {
+    width: 143px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #F7FAFC;
+
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    .contact-container {
+        height: auto;
+        padding: 50px 40px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    /* info section wraps */
+    .contact-info-row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    /* form grows naturally */
+    .contact-form {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .contact-input,
+    .contact-message {
+        width: 100%;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .contact-container {
+        padding: 30px 16px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contact-intro {
+        font-size: 13px;
+    }
+
+    /* stack info vertically */
+    .contact-info-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* full-width form */
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-input {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .contact-message {
+        width: 100%;
+        min-height: 120px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 220px;
+    }
+}

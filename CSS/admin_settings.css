@@ -1,0 +1,174 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.admin-settings-page {
+    height: 710px;
+}
+
+.admin-settings-container {
+    padding: 60px 106px;
+}
+
+/* TITLE */
+.admin-settings-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+    margin-bottom: 30px;
+}
+
+/* CARD */
+.admin-settings-card {
+    width: 1233px;
+    background: #F7FAFC;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 8px;
+    padding: 12px 0;
+}
+
+/* ROW */
+.admin-settings-row {
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 16px 10px 16px;
+    cursor: pointer;
+    transition: background .2s ease;
+
+    border-bottom: 0.4px solid #adaaaa40;
+}
+
+.admin-settings-row:hover {
+    background: #EEF4FA;
+}
+
+/* LEFT SIDE */
+.admin-settings-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ICON */
+.admin-settings-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.admin-settings-main {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #0D141C;
+}
+
+.admin-settings-sub {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #4D7399;
+}
+
+.admin-settings-logout {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0D141C;
+}
+
+/* ARROW */
+.admin-settings-arrow {
+    width: 28px;
+    height: 28px;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .admin-settings-page {
+        height: auto;
+    }
+
+    .admin-settings-container {
+        padding: 50px 40px;
+    }
+
+    .admin-settings-title {
+        font-size: 28px;
+    }
+
+    /* ---------- CARD ---------- */
+    .admin-settings-card {
+        width: 100%;
+    }
+
+    /* ---------- ROW ---------- */
+    .admin-settings-row {
+        padding: 18px 14px;
+    }
+
+    .admin-settings-icon {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .admin-settings-container {
+        padding: 30px 16px;
+    }
+
+    .admin-settings-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* card full width */
+    .admin-settings-card {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    /* stack content slightly tighter */
+    .admin-settings-row {
+        padding: 16px 12px;
+        gap: 10px;
+    }
+
+    .admin-settings-left {
+        gap: 12px;
+    }
+
+    .admin-settings-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .admin-settings-main {
+        font-size: 15px;
+    }
+
+    .admin-settings-sub {
+        font-size: 13px;
+    }
+
+    .admin-settings-arrow {
+        width: 24px;
+        height: 24px;
+    }
+}

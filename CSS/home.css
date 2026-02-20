@@ -1,0 +1,439 @@
+/* ===== NAVBAR CONTAINER ===== */
+.home-nav-container {
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 40px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    border-image-slice: 1;
+
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+/* ===== BRAND ===== */
+.home-nav-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 10px;
+
+}
+
+.home-nav-logo img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    display: block;
+
+
+}
+
+.home-nav-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #0D141C;
+    cursor: pointer;
+}
+
+/* ===== NAV LINKS ===== */
+.home-nav-links {
+    margin-left: 400px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.home-nav-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0D141C;
+}
+
+/* ACTIVE LINK */
+.home-nav-active {
+    color: #195898;
+    text-decoration: underline;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.home-nav-login {
+    width: 84px;
+    height: 40px;
+    min-width: 84px;
+
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+
+/* footer */
+/* ================= FOOTER CONTAINER ================= */
+.home-footer-container {
+    width: 100vw;
+    height: 200px;
+    background: #4D7399;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= FOOTER CONTENT ================= */
+.home-footer-content {
+    width: 960px;
+    height: 200px;
+
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* ================= FOOTER LINKS ================= */
+.home-footer-links {
+    width: 920px;
+    height: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-footer-link {
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.home-footer-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.home-footer-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* ================= COPYRIGHT TEXT ================= */
+.home-footer-copy {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* main */
+/* ================= HOME PAGE ================= */
+
+.home-container {
+    width: 110vw;
+    height: 1947px;
+    padding: 40px 64px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HERO */
+.home-hero {
+    width: 1312px;
+    height: 828px;
+    border-radius: 8px;
+    margin: auto;
+
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+        url("../images/home-hero.jpg") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-hero-overlay {
+    text-align: center;
+    color: #fff;
+}
+
+.home-hero-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    width: 90%;
+}
+
+.home-hero-text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.home-hero-btn {
+    margin-top: 22px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    box-shadow: 0px 4px 4px #00000040;
+
+    color: #F7FAFC;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* SECTION TITLES */
+.home-section-title {
+    margin-top: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #0D141C;
+}
+
+.home-section-desc {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D141C;
+}
+
+/* CARD ROW */
+.home-card-row {
+    margin-top: 30px;
+    display: flex;
+    gap: 22px;
+}
+
+/* CARD */
+.home-card {
+    width: 243px;
+    height: 199px;
+    padding: 16px;
+    border-radius: 8px;
+
+    /* REAL GRADIENT BORDER */
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+
+.home-card-icon {
+    width: 24px;
+    height: 24px;
+
+}
+
+.home-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0D141C;
+}
+
+.home-card p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #4D7399;
+    margin-top: 4px;
+}
+
+/* =====================================================
+   TABLET VIEW (≤1024px)
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+    .home-nav-container {
+        width: 100%;
+        padding: 12px 24px;
+    }
+
+    /* reduce large desktop spacing */
+    .home-nav-links {
+        margin-left: 40px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .home-nav-title {
+        font-size: 16px;
+    }
+
+    .home-nav-login {
+        height: 36px;
+        padding: 0 14px;
+    }
+
+    /* ---------- MAIN ---------- */
+    .home-container {
+        padding: 40px 32px;
+        height: auto;
+    }
+
+    /* ---------- HERO ---------- */
+    .home-hero {
+        width: 100%;
+        height: 650px;
+    }
+
+    .home-hero-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* ---------- CARDS ---------- */
+    .home-card-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .home-footer-content {
+        width: 100%;
+    }
+
+    .home-footer-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE VIEW (≤768px)
+===================================================== */
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+    .home-nav-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .home-nav-brand {
+        margin-left: 0;
+    }
+
+    /* stack links below logo */
+    .home-nav-links {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .home-nav-link {
+        font-size: 14px;
+    }
+
+    .home-nav-login {
+        width: 100%;
+        max-width: 200px;
+        height: 36px;
+    }
+
+    /* ---------- MAIN ---------- */
+    .home-container {
+        padding: 24px 16px;
+        height: auto;
+    }
+
+    /* ---------- HERO ---------- */
+    .home-hero {
+        width: 100%;
+        height: 420px;
+    }
+
+    .home-hero-title {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: -1px;
+    }
+
+    .home-hero-text {
+        font-size: 14px;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    .home-section-title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .home-section-desc {
+        font-size: 16px;
+    }
+
+    /* ---------- CARDS ---------- */
+    .home-card-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .home-card {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .home-footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .home-footer-copy {
+        font-size: 14px;
+    }
+}

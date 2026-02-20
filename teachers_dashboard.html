@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/teachers_dashboard.css">
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="teacher-nav-links">
+            <a href="teachers_dashboard.html" class="teacher-nav-link teacher-nav-active">Dashboard</a>
+            <a href="teachers_attendance.html" class="teacher-nav-link">Attendance</a>
+            <a href="teachers_marks.html" class="teacher-nav-link">Marks</a>
+            <a href="teachers_classes.html" class="teacher-nav-link">Classes</a>
+            <a href="teachers_report.html" class="teacher-nav-link">Report</a>
+            <a href="teachers_profile.html" class="teacher-nav-link">Profile</a>
+
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="teachers-dashboard">
+
+        <div class="teachers-dash-page">
+
+            <div class="teachers-dash-container">
+
+                <!-- TITLE -->
+                <h1 class="teachers-dash-title">Teacher Dashboard</h1>
+                <p class="teachers-dash-desc">
+                    Manage your classes, attendance, and student marks efficiently.
+                </p>
+
+                <!-- QUICK ACTIONS -->
+                <h3 class="teachers-dash-section-small">Quick Actions</h3>
+
+                <div class="teachers-dash-actions">
+                    <button class="teachers-dash-btn-primary">
+                        Mark Attendance
+                    </button>
+
+                    <button class="teachers-dash-btn-secondary">
+                        Enter Marks
+                    </button>
+                </div>
+
+
+                <!-- MY CLASSES -->
+                <div class="teachers-dash-section-bar">
+                    My Classes
+                </div>
+
+                <div class="teachers-dash-card-row">
+
+                    <!-- CARD 1 -->
+                    <div class="teachers-dash-class-card">
+                        <img src="images/math.jpg" class="teachers-dash-class-img">
+
+                        <p class="teachers-dash-class-grade">Class 10A</p>
+                        <h4 class="teachers-dash-class-title">Mathematics</h4>
+                        <p class="teachers-dash-class-teacher">Mrs. Emily Carter</p>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="teachers-dash-class-card">
+                        <img src="images/physics.jpg" class="teachers-dash-class-img">
+
+                        <p class="teachers-dash-class-grade">Class 11 B</p>
+                        <h4 class="teachers-dash-class-title">Physics</h4>
+                        <p class="teachers-dash-class-teacher">Mr. David Lee</p>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="teachers-dash-class-card">
+                        <img src="images/chemistry.jpg" class="teachers-dash-class-img">
+
+                        <p class="teachers-dash-class-grade">Class 12 C</p>
+                        <h4 class="teachers-dash-class-title">Chemistry</h4>
+                        <p class="teachers-dash-class-teacher">Mr. Sarah Jones</p>
+                    </div>
+
+                </div>
+
+
+                <!-- PERFORMANCE -->
+                <div class="teachers-dash-section-bar">
+                    Student performance
+                </div>
+
+                <div class="teachers-dash-feature" style="margin-top: 60px;margin-bottom: 30px;">
+                    <img src="images/perfo.jpg" class="teachers-dash-feature-img">
+
+                    <div>
+                        <h4 class="teachers-dash-feature-title">
+                            View Student Performance
+                        </h4>
+
+                        <p class="teachers-dash-feature-desc">
+                            Analyze individual student progress and identify areas for improvement.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- REPORTS -->
+                <div class="teachers-dash-section-bar">
+                    Reports
+                </div>
+
+                <div class="teachers-dash-feature" style="margin-top: 60px;margin-bottom: 30px;">
+                    <img src="images/report.jpg" class="teachers-dash-feature-img">
+
+                    <div>
+                        <h4 class="teachers-dash-feature-title">
+                            Download Class Reports
+                        </h4>
+
+                        <p class="teachers-dash-feature-desc">
+                            Generate and download detailed reports for each class,
+                            including attendance and marks.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/students_dashboard.css">
+    <link rel="stylesheet" href="CSS/students_profile.css">
+
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="student-nav-links">
+            <a href="students_dashboard.html" class="student-nav-link ">Dashboard</a>
+            <a href="students_attendance.html" class="student-nav-link">Attendance</a>
+            <a href="students_result.html" class="student-nav-link">Result</a>
+            <a href="students_fees.html" class="student-nav-link">Fees</a>
+            <a href="students_profile.html" class="student-nav-link student-nav-active">Profile</a>
+
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="student-profile">
+
+
+        <div class="student-profile-container">
+
+            <!-- TITLE -->
+            <h1 class="student-profile-title">My Profile</h1>
+
+            <!-- ================= PERSONAL INFO ================= -->
+            <h3 class="student-profile-section-title">Personal Information</h3>
+
+            <div class="student-profile-info-box">
+
+                <div class="student-profile-row">
+                    <div class="student-profile-cell">
+                        <p class="student-profile-label">Student Name</p>
+                        <p class="student-profile-value">Ethan Harper</p>
+                    </div>
+
+                    <div class="student-profile-cell">
+                        <p class="student-profile-label">Roll Number</p>
+                        <p class="student-profile-value">2023-SH-1234</p>
+                    </div>
+                </div>
+
+                <div class="student-profile-row">
+                    <div class="student-profile-cell">
+                        <p class="student-profile-label">Class & Section</p>
+                        <p class="student-profile-value">Grade 10 - A</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= CONTACT ================= -->
+            <h3 class="student-profile-section-title">Contact Details</h3>
+
+            <div class="student-profile-info-box">
+
+                <div class="student-profile-row">
+                    <div class="student-profile-cell">
+                        <p class="student-profile-label">Email</p>
+                        <p class="student-profile-value">
+                            ethan.harper@example.<br>com
+                        </p>
+                    </div>
+
+                    <div class="student-profile-cell">
+                        <p class="student-profile-label">Phone Number</p>
+                        <p class="student-profile-value">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= ACTIONS ================= -->
+            <h3 class="student-profile-section-title">Actions</h3>
+
+            <div class="student-profile-action">
+                <span>Edit Profile (Limited)</span>
+                <img src="images/edit-icon.png" class="student-profile-icon">
+            </div>
+
+            <div class="student-profile-action">
+                <span>Change Password</span>
+                <img src="images/lock-pwd.png" class="student-profile-icon">
+            </div>
+
+            <div class="student-profile-action" onclick="window.location.href='home.html'">
+                <span>Logout</span>
+                <img src="images/logout-icon.png" class="student-profile-icon">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

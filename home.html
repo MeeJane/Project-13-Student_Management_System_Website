@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="home-nav-links">
+            <a href="home.html" class="home-nav-link home-nav-active">Home</a>
+            <a href="about.html" class="home-nav-link">About Us</a>
+            <a href="features.html" class="home-nav-link">Features</a>
+            <a href="contact.html" class="home-nav-link">Contact</a>
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="home">
+        <!-- ================= HOME PAGE ================= -->
+        <section class="home-container">
+
+            <!-- HERO -->
+            <div class="home-hero">
+                <div class="home-hero-overlay">
+                    <h1 class="home-hero-title">
+                        Smart Student Management Made Simple
+                    </h1>
+
+                    <p class="home-hero-text">
+                        Manage students, attendance, exams, and fees easily with one powerful system.
+                    </p>
+
+                    <button class="home-hero-btn" onclick="window.location.href='login.html'">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+
+            <!-- ADVANTAGES -->
+            <div class="home-advantages">
+                <h2 class="home-section-title">Our System's Advantages</h2>
+
+                <p class="home-section-desc">
+                    Discover the benefits of using our student management system to streamline
+                    your academic administration and improve communication.
+                </p>
+
+                <div class="home-card-row">
+
+                    <div class="home-card">
+                        <img src="images/icon-1-1.png" class="home-card-icon">
+                        <h3>Centralized Student Data</h3>
+                        <p>Keep all student information in one place for easy access and management.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-cal.png" class="home-card-icon">
+                        <h3>Easy Attendance</h3>
+                        <p>Streamline attendance tracking with digital tools and automated reports.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-accu.png" class="home-card-icon">
+                        <h3>Accurate Exam Management</h3>
+                        <p>Manage exams, results, and grading efficiently with automated processes.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-dol.png" class="home-card-icon">
+                        <h3>Transparent Fee Monitoring</h3>
+                        <p>Monitor fee payments, track outstanding balances, and generate reports.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-shield.png" class="home-card-icon">
+                        <h3>Role-Based Access</h3>
+                        <p>Control access levels for different users, ensuring data security and privacy.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MODULES -->
+            <div class="home-modules">
+                <h2 class="home-section-title">Explore Our Modules</h2>
+
+                <p class="home-section-desc">
+                    Our system offers a range of modules to cover all aspects of student management,
+                    from admissions to reporting.
+                </p>
+
+                <div class="home-card-row">
+
+                    <div class="home-card">
+                        <img src="images/icon-1-1.png" class="home-card-icon">
+                        <h3>Student Management</h3>
+                        <p>Manage student records, admissions, and profiles efficiently.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-cal.png" class="home-card-icon">
+                        <h3>Attendance Management</h3>
+                        <p>Track student attendance, generate reports, and monitor trends.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-accu.png" class="home-card-icon">
+                        <h3>Exams & Results</h3>
+                        <p>Create exams, publish results, and manage grading systems.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-dol.png" class="home-card-icon">
+                        <h3>Fees Management</h3>
+                        <p>Manage fee structures, track payments, and generate financial reports.</p>
+                    </div>
+
+                    <div class="home-card">
+                        <img src="images/icon-pp.png" class="home-card-icon">
+                        <h3>Teacher Management</h3>
+                        <p>Manage teacher profiles, schedules, and assignments.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

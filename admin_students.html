@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/admin_dashboard.css">
+    <link rel="stylesheet" href="CSS/admin_student.css">
+
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="admin-nav-links">
+            <a href="admin_dashboard.html" class="admin-nav-link ">Dashboard</a>
+            <a href="admin_teachers.html" class="admin-nav-link">Teachers</a>
+            <a href="admin_students.html" class="admin-nav-link admin-nav-active">Students</a>
+            <a href="admin_attendance.html" class="admin-nav-link">Attendance</a>
+            <a href="admin_exams_result.html" class="admin-nav-link">Exams & Results</a>
+            <a href="admin_fees.html" class="admin-nav-link">Fees</a>
+            <a href="admin_settings.html" class="admin-nav-link">Settings</a>
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="admin-students">
+        <div class="admin-students-container">
+
+            <!-- HEADER -->
+            <div class="admin-students-header">
+                <h1 class="admin-students-title">Students</h1>
+
+                <button class="admin-students-add-btn">
+                    Add New Student
+                </button>
+            </div>
+
+
+            <!-- TABLE -->
+            <div class="admin-students-table-wrapper">
+
+                <table class="admin-students-table">
+
+                    <thead class="admin-students-thead">
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Roll No</th>
+                            <th>Class</th>
+                            <th>Section</th>
+                            <th>Status</th>
+                            <th class="admin-students-action-head">Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="admin-students-col1">Sophia Clark</td>
+                            <td class="admin-students-col2">101</td>
+                            <td class="admin-students-col2">10th</td>
+                            <td class="admin-students-col2">A</td>
+                            <td>
+                                <span class="admin-students-status">Active</span>
+                            </td>
+                            <td class="admin-students-actions">
+                                <a href="student_details.html">View</a> |
+                                <a href="#">Edit</a> |
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="admin-students-col1">Ethan Walker</td>
+                            <td class="admin-students-col2">102</td>
+                            <td class="admin-students-col2">10th</td>
+                            <td class="admin-students-col2">B</td>
+                            <td><span class="admin-students-status">Active</span></td>
+                            <td class="admin-students-actions">
+                                <a href="student_details.html">View</a> |
+                                <a href="#">Edit</a> |
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="admin-students-col1">Olivia Reed</td>
+                            <td class="admin-students-col2">103</td>
+                            <td class="admin-students-col2">10th</td>
+                            <td class="admin-students-col2">A</td>
+                            <td>
+                                <span class="admin-students-status">Inactive</span>
+                            </td>
+                            <td class="admin-students-actions">
+                                <a href="student_details.html">View</a> |
+                                <a href="#">Edit</a> |
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="admin-students-col1">Liam Hayes</td>
+                            <td class="admin-students-col2">104</td>
+                            <td class="admin-students-col2">10th</td>
+                            <td class="admin-students-col2">B</td>
+                            <td><span class="admin-students-status">Active</span></td>
+                            <td class="admin-students-actions">
+                                <a href="student_details.html">View</a> |
+                                <a href="#">Edit</a> |
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="admin-students-col1">Ava Morgan</td>
+                            <td class="admin-students-col2">105</td>
+                            <td class="admin-students-col2">10th</td>
+                            <td class="admin-students-col2">A</td>
+                            <td><span class="admin-students-status">Active</span></td>
+                            <td class="admin-students-actions">
+                                <a href="student_details.html">View</a> |
+                                <a href="#">Edit</a> |
+                                <a href="#">Delete</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

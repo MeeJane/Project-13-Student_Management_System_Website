@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="home-nav-links">
+            <a href="home.html" class="home-nav-link ">Home</a>
+            <a href="about.html" class="home-nav-link">About Us</a>
+            <a href="features.html" class="home-nav-link">Features</a>
+            <a href="contact.html" class="home-nav-link home-nav-active">Contact</a>
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contact">
+        <!-- ================= CONTACT PAGE ================= -->
+        <section class="contact-container">
+
+            <!-- TITLE -->
+            <h1 class="contact-title">Contact Us</h1>
+
+            <p class="contact-intro">
+                We're here to help! Reach out to us for any questions, support, or demo requests.
+                Our team is dedicated to providing you with the best assistance possible.
+            </p>
+
+            <!-- CONTACT INFORMATION -->
+            <h2 class="contact-subtitle">Contact Information</h2>
+
+            <div class="contact-info-row">
+                <div class="contact-info-block">
+                    <span class="contact-info-label">Email</span>
+                    <p class="contact-info-text">support@edulink.com</p>
+                </div>
+
+                <div class="contact-info-block">
+                    <span class="contact-info-label">Phone</span>
+                    <p class="contact-info-text">+1 (555) 123-4567</p>
+                </div>
+            </div>
+
+            <div class="contact-office">
+                <span class="contact-info-label">Office Hours</span>
+                <p class="contact-info-text">
+                    Mon - Fri: 9 AM - 5 PM <br>(EST)
+                </p>
+            </div>
+
+            <!-- FORM -->
+            <h2 class="contact-subtitle contact-form-title">
+                Send Us a Message
+            </h2>
+
+            <form class="contact-form">
+
+                <label class="contact-label">Name</label>
+                <input type="text" placeholder="Your Name" class="contact-input">
+
+                <label class="contact-label">Email</label>
+                <input type="email" placeholder="Your Email" class="contact-input">
+
+                <label class="contact-label">Phone Number</label>
+                <input type="text" placeholder="Your Phone Number" class="contact-input">
+
+                <label class="contact-label">Message</label>
+                <textarea class="contact-message"></textarea>
+
+                <button type="submit" class="contact-btn">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

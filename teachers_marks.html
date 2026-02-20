@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/teachers_dashboard.css">
+    <link rel="stylesheet" href="CSS/teachers_marks.css">
+
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="teacher-nav-links">
+            <a href="teachers_dashboard.html" class="teacher-nav-link ">Dashboard</a>
+            <a href="teachers_attendance.html" class="teacher-nav-link">Attendance</a>
+            <a href="teachers_marks.html" class="teacher-nav-link teacher-nav-active">Marks</a>
+            <a href="teachers_classes.html" class="teacher-nav-link">Classes</a>
+            <a href="teachers_report.html" class="teacher-nav-link">Report</a>
+            <a href="teachers_profile.html" class="teacher-nav-link">Profile</a>
+
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="teachers-marks">
+
+        <div class="teachers-marks">
+
+            <div class="teachers_marks-container">
+
+                <!-- TITLE -->
+                <h1 class="teachers_marks-title">Marks & Results</h1>
+
+                <!-- FILTERS -->
+                <select class="teachers_marks-input">
+                    <option>Select Exam</option>
+                </select>
+
+                <select class="teachers_marks-input">
+                    <option>Select Class & Subject</option>
+                </select>
+
+                <!-- TABLE -->
+                <div class="teachers_marks-table-wrapper">
+
+                    <table class="teachers_marks-table">
+
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Roll No.</th>
+                                <th>Marks</th>
+                                <th>Total / Grade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Liam Harper</td>
+                                <td>101</td>
+                                <td>85</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Olivia Bennett</td>
+                                <td>102</td>
+                                <td>92</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td>Noah Carter</td>
+                                <td>103</td>
+                                <td>78</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Emma Hayes</td>
+                                <td>104</td>
+                                <td>88</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Jackson Reed</td>
+                                <td>105</td>
+                                <td>95</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td>Ava Morgan</td>
+                                <td>106</td>
+                                <td>72</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Aiden Foster</td>
+                                <td>107</td>
+                                <td>80</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>Chloe Evans</td>
+                                <td>108</td>
+                                <td>90</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Lucas Parker</td>
+                                <td>109</td>
+                                <td>65</td>
+                                <td>D</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Hughes</td>
+                                <td>110</td>
+                                <td>82</td>
+                                <td>B</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="teachers_marks-btn-area">
+
+                    <div class="teachers_marks-btn-row">
+                        <button class="teachers_marks-btn">Save Marks</button>
+                        <button class="teachers_marks-btn">Edit Marks</button>
+                    </div>
+
+                    <div class="teachers_marks-btn-row-bottom">
+                        <button class="teachers_marks-btn primary">
+                            Submit for Approval
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

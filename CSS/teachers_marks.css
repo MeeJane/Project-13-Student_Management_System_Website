@@ -1,0 +1,243 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.teachers_marks-container {
+    height: 2020px;
+    padding: 120px 110px 40px;
+}
+
+/* TITLE */
+.teachers_marks-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0D141C;
+    margin-bottom: 100px;
+}
+
+/* INPUTS */
+.teachers_marks-input {
+    width: 1227px;
+    height: 56px;
+    margin-bottom: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    box-shadow: 0 4px 4px #00000040;
+    font-size: 16px;
+    color: #0D141C;
+    margin-bottom: 100px;
+
+}
+
+/* TABLE WRAPPER */
+.teachers_marks-table-wrapper {
+    width: 1235px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    border: 1px solid transparent;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* TABLE */
+.teachers_marks-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+/* HEADER */
+.teachers_marks-table thead {
+    background: #F7FAFC;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.teachers_marks-table th {
+    height: 46px;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D141C;
+}
+
+/* ROWS */
+.teachers_marks-table tbody tr {
+    height: 72px;
+}
+
+.teachers_marks-table td {
+    padding: 8px 16px;
+    border-top: 1px solid #E5E8EB;
+    font-size: 14px;
+}
+
+/* COLUMN COLORS */
+.teachers_marks-table td:first-child {
+    color: #0D141C;
+}
+
+.teachers_marks-table td:nth-child(n+2) {
+    color: #4D7399;
+}
+
+/* BUTTON AREA */
+.teachers_marks-btn-area {
+    width: 1235px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.teachers_marks-btn-row {
+    display: flex;
+    gap: 14px;
+}
+
+.teachers_marks-btn-row-bottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 169px;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+/* BUTTON */
+.teachers_marks-btn {
+    width: 149px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #E8EDF2;
+    color: #0D141C;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* PRIMARY */
+.teachers_marks-btn.primary {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #F7FAFC;
+}
+
+/* HOVER */
+.teachers_marks-btn:hover {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #F7FAFC;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .teachers_marks-container {
+        height: auto;
+        padding: 80px 40px 40px;
+    }
+
+    .teachers_marks-title {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+    /* ---------- INPUT ---------- */
+    .teachers_marks-input {
+        width: 100%;
+        height: 52px;
+        margin-bottom: 60px;
+    }
+
+    /* ---------- TABLE ---------- */
+    .teachers_marks-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        /* allows horizontal scroll */
+    }
+
+    .teachers_marks-table {
+        min-width: 900px;
+        /* keeps table readable */
+    }
+
+    /* ---------- BUTTON AREA ---------- */
+    .teachers_marks-btn-area {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .teachers_marks-btn-row-bottom {
+        margin-right: 0;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .teachers_marks-container {
+        padding: 60px 16px 30px;
+    }
+
+    .teachers_marks-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    /* input full width */
+    .teachers_marks-input {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    /* scrollable table */
+    .teachers_marks-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .teachers_marks-table {
+        min-width: 750px;
+    }
+
+    /* buttons stacked */
+    .teachers_marks-btn-area {
+        align-items: stretch;
+    }
+
+    .teachers_marks-btn-row {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .teachers_marks-btn-row-bottom {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .teachers_marks-btn {
+        width: 100%;
+        max-width: 240px;
+    }
+}

@@ -1,0 +1,312 @@
+/* ===== NAV LINKS ===== */
+.student-nav-links {
+    margin-left: 400px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.student-nav-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0D141C;
+}
+
+/* ACTIVE LINK */
+.student-nav-active {
+    color: #195898;
+    text-decoration: underline;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* main */
+body {
+    margin: 0;
+    background: #F7FAFC;
+    font-family: 'Inter', sans-serif;
+}
+
+.students-dash-container {
+    width: 1305px;
+    height: 1997px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* TITLE */
+.students-dash-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+}
+
+.students-dash-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    color: #4D7399;
+    margin-bottom: 30px;
+}
+
+/* SUMMARY BOXES */
+.students-dash-summary {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.students-dash-box {
+    width: 413px;
+    height: 144px;
+    padding: 24px;
+    border-radius: 8px;
+
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#E8EDF2, #E8EDF2) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    box-shadow: 0 4px 4px #00000040;
+
+    /* ✅ ALIGNMENT FIX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical center */
+    gap: 8px;
+    /* even spacing */
+}
+
+.students-dash-box-label,
+.students-dash-box-value {
+    margin: 0;
+}
+
+.students-dash-box-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D141C;
+}
+
+.students-dash-box-value {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 6px 0;
+}
+
+.students-dash-positive {
+    color: #088738;
+    font-weight: 500;
+}
+
+.students-dash-negative {
+    color: #E83808;
+    font-weight: 500;
+}
+
+.students-dash-neutral {
+    color: #4D7399;
+    font-weight: 500;
+}
+
+
+/* SECTION TITLE */
+.students-dash-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0D141C;
+    margin: 30px 0 15px;
+}
+
+/* BUTTONS */
+.students-dash-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.students-dash-btn-primary {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #F7FAFC;
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.students-dash-btn-secondary {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    background: #E8EDF2;
+    color: #0D141C;
+}
+
+/* OVERVIEW CARDS */
+.students-dash-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 18px 0;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.students-dash-overview:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.students-dash-overview-text {
+    width: 608px;
+}
+
+.students-dash-overview-small {
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.students-dash-overview-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0D141C;
+    margin: 4px 0;
+}
+
+.students-dash-overview-text p {
+    font-size: 14px;
+    color: #4D7399;
+}
+
+.students-dash-overview-img {
+    width: 665px;
+    height: 171px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+    .student-nav-links {
+        margin-left: 60px;
+        /* reduce desktop 400px gap */
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    /* ---------- CONTAINER ---------- */
+    .students-dash-container {
+        width: 100%;
+        height: auto;
+        padding: 40px 24px;
+    }
+
+    /* ---------- SUMMARY BOXES ---------- */
+    .students-dash-summary {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .students-dash-box {
+        width: 45%;
+        min-width: 260px;
+    }
+
+    /* ---------- OVERVIEW ---------- */
+    .students-dash-overview {
+        gap: 20px;
+    }
+
+    .students-dash-overview-text {
+        width: 50%;
+    }
+
+    .students-dash-overview-img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+    .student-nav-links {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        width: 100%;
+    }
+
+    /* ---------- PAGE ---------- */
+    .students-dash-container {
+        padding: 24px 16px;
+    }
+
+    .students-dash-title {
+        font-size: 24px;
+    }
+
+    /* ---------- SUMMARY BOXES ---------- */
+    .students-dash-summary {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .students-dash-box {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ---------- ACTION BUTTONS ---------- */
+    .students-dash-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .students-dash-btn-primary,
+    .students-dash-btn-secondary {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* ---------- OVERVIEW CARDS ---------- */
+    .students-dash-overview {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .students-dash-overview-text {
+        width: 100%;
+    }
+
+    .students-dash-overview-img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+}

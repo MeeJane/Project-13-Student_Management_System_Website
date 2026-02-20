@@ -1,0 +1,269 @@
+* {
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.students-result-container {
+    height: 966px;
+    padding: 70px 90px;
+}
+
+/* TITLES */
+.students-result-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0D141C;
+    margin-bottom: 70px;
+}
+
+.students-result-subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0D141C;
+    margin-bottom: 50px;
+}
+
+/* TABLE WRAPPER */
+.students-result-table-wrapper {
+    width: 1235px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    border: 1.5px solid #195898;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* TABLE */
+.students-result-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* HEADER */
+.students-result-table thead {
+    background: #F7FAFC;
+    box-shadow: 0 4px 4px #00000040;
+    border: 1.5px solid #195898;
+
+}
+
+.students-result-table th {
+    height: 67px;
+    padding: 25px 26px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D141C;
+    border-bottom: 1.5px solid #195898;
+
+}
+
+.students-result-action-head {
+    color: #4D7399;
+}
+
+/* BODY */
+.students-result-table td {
+
+    height: 72px;
+    padding: 25px 26px;
+
+    border-top: 1px solid #E5E8EB;
+    font-size: 14px;
+}
+
+/* COLORS */
+.students-result-table td:nth-child(2),
+.students-result-table td:nth-child(3) {
+    color: #4D7399;
+}
+
+/* PASS BADGE */
+.students-result-pass {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 132px;
+    height: 32px;
+    border-radius: 8px;
+    background: #4FB538;
+    box-shadow: 0 4px 4px #00000040;
+
+    font-weight: 500;
+    color: #0D141C;
+}
+
+/* ACTION LINK */
+.students-result-action {
+    color: #4D7399;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* BUTTON AREA */
+.students-result-btn-wrap {
+    width: 1235px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+/* DOWNLOAD BUTTON */
+.students-result-download-btn {
+    width: 228px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #E8EDF2;
+    box-shadow: 0 4px 4px #00000040;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #0D141C;
+    cursor: pointer;
+    transition: .25s;
+    margin-top: 30px;
+}
+
+
+.students-result-download-btn:hover {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #fff;
+}
+
+/* ===== OVERLAY ===== */
+.students-result-overlay {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 837px;
+    height: 99px;
+    border-radius: 15px;
+    background: #4D7399;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .students-result-container {
+        height: auto;
+        padding: 60px 40px;
+    }
+
+    .students-result-title {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .students-result-subtitle {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* ---------- TABLE ---------- */
+    .students-result-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .students-result-table {
+        min-width: 900px;
+    }
+
+    /* ---------- BUTTON AREA ---------- */
+    .students-result-btn-wrap {
+        width: 100%;
+    }
+
+    /* ---------- OVERLAY ---------- */
+    .students-result-overlay {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .students-result-container {
+        padding: 40px 16px;
+    }
+
+    .students-result-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .students-result-subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    /* scrollable table */
+    .students-result-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .students-result-table {
+        min-width: 750px;
+    }
+
+    /* tighter table spacing */
+    .students-result-table th,
+    .students-result-table td {
+        padding: 14px 16px;
+        font-size: 13px;
+    }
+
+    /* badge resize */
+    .students-result-pass {
+        width: 110px;
+        height: 28px;
+        font-size: 13px;
+    }
+
+    /* button */
+    .students-result-download-btn {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .students-result-btn-wrap {
+        justify-content: flex-start;
+    }
+
+    /* overlay */
+    .students-result-overlay {
+        width: 90%;
+        font-size: 18px;
+        padding: 16px;
+    }
+}

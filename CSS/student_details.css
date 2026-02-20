@@ -1,0 +1,357 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.student_details-container {
+    height: 1867px;
+    padding: 120px 113px 40px;
+}
+
+/* TITLE */
+.student_details-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0D141C;
+}
+
+.student_details-desc {
+    font-size: 14px;
+    color: #4D7399;
+    margin-bottom: 40px;
+}
+
+/* PROFILE */
+.student_details-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.student_details-profile-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.student_details-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+    object-fit: cover;
+}
+
+.student_details-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.student_details-meta {
+    font-size: 16px;
+    color: #4D7399;
+}
+
+/* BUTTONS */
+.student_details-edit-btn,
+.student_details-download-btn {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background: #E8EDF2;
+    font-weight: 700;
+    color: #0D141C;
+    box-shadow: 0 4px 4px #00000040;
+    cursor: pointer;
+}
+
+.student_details-edit-btn {
+    width: 480px;
+}
+
+
+.student_details-edit-btn:hover,
+.student_details-download-btn:hover {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #fff;
+}
+
+/* SECTION TITLE */
+.student_details-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+}
+
+/* INFO GRID */
+.student_details-info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* two equal columns */
+    column-gap: 120px;
+    /* spacing like design */
+    border-top: 1px solid #E5E8EB;
+    padding: 16px 0;
+}
+
+
+.student_details-label {
+    color: #4D7399;
+    font-size: 14px;
+}
+
+.student_details-value {
+    color: #0D141C;
+    font-size: 14px;
+}
+
+/* CARDS */
+.student_details-cards {
+    display: flex;
+    gap: 24px;
+}
+
+.student_details-card {
+    width: 400px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.student_details-card-title {
+    font-size: 16px;
+}
+
+.student_details-card-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* MARKS TABLE */
+/* ===== TABLE CARD ===== */
+.student_details-table-wrapper {
+    width: 1232px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    border: 1px solid transparent;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+
+/* ===== TABLE ===== */
+.student_details-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    background: #F7FAFC;
+}
+
+
+/* ===== HEADER ROW ===== */
+.student_details-table thead {
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.student_details-table th {
+    height: 46px;
+    padding: 12px 16px;
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D141C;
+}
+
+
+/* ===== DATA ROW ===== */
+.student_details-table tbody tr {
+    height: 72px;
+}
+
+.student_details-table tbody td {
+    padding: 8px 16px;
+    border-top: 1px solid #E5E8EB;
+}
+
+
+/* FIRST COLUMN TYPO */
+.student_details-table td:first-child {
+    color: #0D141C;
+}
+
+/* OTHER COLUMNS TYPO */
+.student_details-table td:not(:first-child) {
+    color: #4D7399;
+}
+
+
+/* FEES */
+.student_details-fee-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+.student_details-fee-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 608px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.student_details-download-btn {
+    margin-top: 30px;
+    margin-left: 800px;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .student_details-container {
+        height: auto;
+        padding: 90px 40px 40px;
+    }
+
+    /* ---------- PROFILE ---------- */
+    .student_details-profile {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .student_details-edit-btn {
+        width: auto;
+    }
+
+    /* ---------- INFO GRID ---------- */
+    .student_details-info-row {
+        column-gap: 40px;
+    }
+
+    /* ---------- CARDS ---------- */
+    .student_details-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .student_details-card {
+        width: 45%;
+        min-width: 260px;
+    }
+
+    /* ---------- TABLE ---------- */
+    .student_details-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .student_details-table {
+        min-width: 900px;
+    }
+
+    /* ---------- FEES ---------- */
+    .student_details-fee-boxes {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .student_details-fee-card {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .student_details-download-btn {
+        margin-left: 0;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .student_details-container {
+        padding: 70px 16px 30px;
+    }
+
+    .student_details-title {
+        font-size: 24px;
+    }
+
+    /* profile stacked */
+    .student_details-profile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .student_details-avatar {
+        width: 96px;
+        height: 96px;
+    }
+
+    /* info becomes single column */
+    .student_details-info-row {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    /* cards vertical */
+    .student_details-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .student_details-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* table scroll */
+    .student_details-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .student_details-table {
+        min-width: 750px;
+    }
+
+    /* fees stacked */
+    .student_details-fee-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .student_details-fee-card {
+        width: 100%;
+    }
+
+    /* download button */
+    .student_details-download-btn {
+        margin-left: 0;
+        width: 100%;
+        max-width: 220px;
+    }
+}

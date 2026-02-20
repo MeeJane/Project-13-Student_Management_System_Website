@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/students_dashboard.css">
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="student-nav-links">
+            <a href="students_dashboard.html" class="student-nav-link student-nav-active">Dashboard</a>
+            <a href="students_attendance.html" class="student-nav-link">Attendance</a>
+            <a href="students_result.html" class="student-nav-link">Result</a>
+            <a href="students_fees.html" class="student-nav-link">Fees</a>
+            <a href="students_profile.html" class="student-nav-link">Profile</a>
+
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="student-dashboard">
+
+        <div class="students-dash-container">
+
+            <!-- HEADER -->
+            <h1 class="students-dash-title">Student Dashboard</h1>
+            <p class="students-dash-subtitle">
+                Welcome back, Sarah! Here's a summary of your academic progress.
+            </p>
+
+            <!-- SUMMARY BOXES -->
+            <div class="students-dash-summary">
+
+                <div class="students-dash-box">
+                    <p class="students-dash-box-label">Attendance</p>
+                    <h3 class="students-dash-box-value">92%</h3>
+                    <span class="students-dash-positive">+2%</span>
+                </div>
+
+                <div class="students-dash-box">
+                    <p class="students-dash-box-label">Overall Grade</p>
+                    <h3 class="students-dash-box-value">A</h3>
+                    <span class="students-dash-negative">-1%</span>
+                </div>
+
+                <div class="students-dash-box">
+                    <p class="students-dash-box-label">Fees Due</p>
+                    <h3 class="students-dash-box-value">$0</h3>
+                    <span class="students-dash-neutral">0%</span>
+                </div>
+
+            </div>
+
+            <!-- QUICK ACTIONS -->
+            <h2 class="students-dash-section-title">Quick Actions</h2>
+
+            <div class="students-dash-actions">
+                <button onclick="location.href='students_attendance.html'" class="students-dash-btn-primary">
+                    View Attendance
+                </button>
+
+                <button onclick="location.href='students_result.html'" class="students-dash-btn-secondary">
+                    View Results
+                </button>
+            </div>
+
+
+            <!-- ACADEMIC OVERVIEW -->
+            <h2 class="students-dash-section-title">Academic Overview</h2>
+
+            <div class="students-dash-overview" onclick="location.href='students_attendance.html'">
+
+                <div class="students-dash-overview-text">
+                    <p class="students-dash-overview-small">Attendance</p>
+                    <h3>Attendance Percentage</h3>
+                    <p>
+                        Your attendance rate is currently at 92%. Keep up the good work!
+                    </p>
+                </div>
+
+                <img src="images/stu-1.jpg" class="students-dash-overview-img">
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="students-dash-overview" onclick="location.href='students_result.html'">
+                <div class="students-dash-overview-text">
+                    <p class="students-dash-overview-small">Grades</p>
+                    <h3>Exam Results and Grades</h3>
+                    <p>Check your latest exam results and grades for all your courses.</p>
+                </div>
+                <img src="images/stu-2.jpg" class="students-dash-overview-img">
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="students-dash-overview" onclick="location.href='students_fees.html'">
+                <div class="students-dash-overview-text">
+                    <p class="students-dash-overview-small">Fees</p>
+                    <h3>Fee Payment Status</h3>
+                    <p>Your fee payment status is up to date. No outstanding fees.</p>
+                </div>
+                <img src="images/stu-3.jpg" class="students-dash-overview-img">
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="students-dash-overview" onclick="location.href='students_result.html'">
+                <div class="students-dash-overview-text">
+                    <p class="students-dash-overview-small">Report Card</p>
+                    <h3>Download Report Card</h3>
+                    <p>Download your latest report card for a detailed overview.</p>
+                </div>
+                <img src="images/stu-4.jpg" class="students-dash-overview-img">
+            </div>
+
+
+            <!-- PROFILE -->
+            <h2 class="students-dash-section-title">Profile Management</h2>
+
+            <div class="students-dash-overview" onclick="location.href='students_profile.html'">
+                <div class="students-dash-overview-text">
+                    <h3>Update Personal Profile</h3>
+                    <p>Keep your personal information current by updating your profile.</p>
+                </div>
+
+                <img src="images/stu-5.jpg" class="students-dash-overview-img">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

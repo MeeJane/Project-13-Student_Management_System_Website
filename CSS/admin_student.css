@@ -1,0 +1,243 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.admin-students-container {
+    height: 1144px;
+    padding: 140px 60px 40px;
+}
+
+/* HEADER */
+.admin-students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.admin-students-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+}
+
+/* ADD BUTTON */
+.admin-students-add-btn {
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background: #E8EDF2;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D141C;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #00000040;
+    transition: .25s;
+}
+
+.admin-students-add-btn:hover {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #FFF;
+}
+
+/* TABLE WRAPPER */
+.admin-students-table-wrapper {
+    width: 1341px;
+    border-radius: 8px;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px #00000040;
+    overflow: hidden;
+    border: 1.5px solid #0d7ceb;
+
+    /* remove old gradient system */
+    border-top: none;
+
+    /* gradient TOP LINE */
+    background-image:
+        linear-gradient(90deg,
+            #195898 50%,
+            #1c8af8 95.24%);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: top left;
+}
+
+/* TABLE */
+.admin-students-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.admin-students-thead {
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+/* HEADER */
+.admin-students-thead th {
+    height: 44px;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D141C;
+    border-bottom: 1.5px solid #0d7ceb;
+
+    /* remove old gradient system */
+    border-top: none;
+
+    /* gradient TOP LINE */
+    background-image:
+        linear-gradient(90deg,
+            #195898 50%,
+            #1c8af8 95.24%);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: top left;
+
+
+
+}
+
+.admin-students-action-head {
+    color: #4D7399;
+}
+
+/* ROWS */
+.admin-students-table tbody tr {
+    height: 72px;
+    border-top: 1px solid #E5E8EB;
+    border-top: 1px solid #E5E8EB
+}
+
+/* CELLS */
+.admin-students-table td {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-top: 1px solid #E5E8EB
+}
+
+/* TYPOGRAPHY */
+.admin-students-col1 {
+    color: #0D141C;
+}
+
+.admin-students-col2 {
+    color: #4D7399;
+}
+
+/* STATUS BADGE */
+.admin-students-status {
+    display: inline-block;
+    min-width: 84px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 8px;
+    background: #E8EDF2;
+    color: #0D141C;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ACTION LINKS */
+.admin-students-actions a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4D7399;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .admin-students-container {
+        height: auto;
+        padding: 100px 32px 40px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .admin-students-header {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .admin-students-title {
+        font-size: 28px;
+    }
+
+    /* ---------- TABLE ---------- */
+    .admin-students-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        /* important */
+    }
+
+    .admin-students-table {
+        min-width: 950px;
+        /* keeps columns readable */
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .admin-students-container {
+        padding: 80px 16px 30px;
+    }
+
+    .admin-students-title {
+        font-size: 24px;
+    }
+
+    /* stack header */
+    .admin-students-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    /* button easier to tap */
+    .admin-students-add-btn {
+        height: 36px;
+        padding: 0 14px;
+    }
+
+    /* scrollable table */
+    .admin-students-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .admin-students-table {
+        min-width: 750px;
+    }
+
+    /* tighter table spacing */
+    .admin-students-table td,
+    .admin-students-thead th {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .admin-students-status {
+        min-width: 70px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 13px;
+    }
+}

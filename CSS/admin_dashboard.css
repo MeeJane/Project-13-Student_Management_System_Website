@@ -1,0 +1,370 @@
+/* ===== NAV LINKS ===== */
+.admin-nav-links {
+    margin-left: 400px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.admin-nav-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0D141C;
+}
+
+/* ACTIVE LINK */
+.admin-nav-active {
+    color: #195898;
+    text-decoration: underline;
+}
+
+
+/* main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #F7FAFC;
+
+}
+
+/* MAIN CONTAINER */
+.admin-dash-container {
+    height: 1144px;
+    padding: 80px 63px 40px 63px;
+
+}
+
+/* HEADER */
+.admin-dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.admin-dash-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+}
+
+.admin-dash-desc {
+    font-size: 14px;
+    line-height: 21px;
+    color: #4D7399;
+    margin-top: 6px;
+    margin-bottom: 40px;
+}
+
+/* LOGOUT BUTTON */
+.admin-dash-logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    color: #E8EDF2;
+    cursor: pointer;
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    box-shadow: 0px 4px 4px #00000040;
+    font-weight: 700;
+}
+
+/* BOXES */
+.admin-dash-boxes {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 90px;
+}
+
+.admin-dash-box {
+    width: 248px;
+    height: 112px;
+    padding: 24px;
+    border-radius: 8px;
+
+    /* DOUBLE BACKGROUND TRICK */
+    background:
+        linear-gradient(#E8EDF2, #E8EDF2) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    border: 1px solid transparent;
+}
+
+
+.admin-dash-box-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D141C;
+
+}
+
+.admin-dash-info {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* SIDE HEADING */
+.admin-dash-side-heading {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0;
+    margin-bottom: 60px;
+
+}
+
+/* ACTION BUTTONS */
+.admin-dash-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* NORMAL BUTTON */
+.admin-dash-btn {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background: #E8EDF2;
+    color: #0D141C;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #00000040;
+    transition: all 0.25s ease;
+    margin-bottom: 60px;
+
+}
+
+/* HOVER = SAME AS ACTIVE */
+.admin-dash-btn:hover {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #F7FAFC;
+}
+
+/* ACTIVE BUTTON (keeps gradient) */
+.admin-dash-btn-active {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #F7FAFC;
+}
+
+
+/* ACTIVITIES */
+.admin-dash-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+
+}
+
+.admin-dash-activity {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.admin-dash-activity-line {
+    width: 2px;
+    height: 32px;
+    background: #CFD6E8;
+}
+
+.admin-dash-activity-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D121C;
+}
+
+.admin-dash-activity-text {
+    font-size: 16px;
+    color: #4D6699;
+}
+
+/* ACTIVITY ICON IMAGE */
+.admin-dash-activity-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-top: 4px;
+}
+
+/* ACTIVITIES CONTAINER */
+.admin-dash-activities {
+    display: flex;
+    flex-direction: column;
+}
+
+/* EACH ACTIVITY ROW */
+.admin-dash-activity {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+/* LEFT TIMELINE COLUMN */
+.admin-dash-timeline {
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ICON */
+.admin-dash-activity-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-top: -3px;
+}
+
+/* VERTICAL LINE */
+.admin-dash-timeline-line {
+    width: 2px;
+    height: 48px;
+    background: #CFD6E8;
+    margin-top: 8px;
+}
+
+/* REMOVE LINE FROM LAST ITEM */
+.admin-dash-activity:last-child .admin-dash-timeline-line {
+    display: none;
+}
+
+/* TEXT SIDE SPACING */
+.admin-dash-activity-content {
+    padding-bottom: 28px;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+    .admin-nav-links {
+        margin-left: 60px;
+        /* reduce desktop 400px gap */
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    /* ---------- CONTAINER ---------- */
+    .admin-dash-container {
+        height: auto;
+        padding: 60px 32px 40px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .admin-dash-header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* ---------- SUMMARY BOXES ---------- */
+    .admin-dash-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .admin-dash-box {
+        width: 45%;
+        min-width: 220px;
+    }
+
+    /* ---------- ACTIVITIES ---------- */
+    .admin-dash-activities {
+        margin-left: 0;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+    .admin-nav-links {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        width: 100%;
+    }
+
+    /* ---------- CONTAINER ---------- */
+    .admin-dash-container {
+        padding: 40px 16px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .admin-dash-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .admin-dash-title {
+        font-size: 24px;
+    }
+
+    /* ---------- LOGOUT BUTTON ---------- */
+    .admin-dash-logout-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* ---------- BOXES ---------- */
+    .admin-dash-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .admin-dash-box {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    /* ---------- ACTION BUTTONS ---------- */
+    .admin-dash-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .admin-dash-btn {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* ---------- ACTIVITIES ---------- */
+    .admin-dash-activities {
+        margin-left: 0;
+        gap: 18px;
+    }
+
+    .admin-dash-activity {
+        gap: 12px;
+    }
+
+    .admin-dash-activity-content {
+        padding-bottom: 18px;
+    }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/admin_dashboard.css">
+    <link rel="stylesheet" href="CSS/admin_exams.css">
+
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="admin-nav-links">
+            <a href="admin_dashboard.html" class="admin-nav-link ">Dashboard</a>
+            <a href="admin_teachers.html" class="admin-nav-link">Teachers</a>
+            <a href="admin_students.html" class="admin-nav-link">Students</a>
+            <a href="admin_attendance.html" class="admin-nav-link">Attendance</a>
+            <a href="admin_exams_result.html" class="admin-nav-link admin-nav-active">Exams & Results</a>
+            <a href="admin_fees.html" class="admin-nav-link">Fees</a>
+            <a href="admin_settings.html" class="admin-nav-link">Settings</a>
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="admin-exams">
+
+        <div class="admin-exam-container">
+
+            <!-- HEADER -->
+            <div class="admin-exam-header">
+                <h1 class="admin-exam-title">Exams & Results</h1>
+                <button class="admin-exam-create-btn">Create Exam</button>
+            </div>
+
+            <!-- NAV TABS -->
+            <div class="admin-exam-tabs">
+                <span class="admin-exam-tab" onclick="switchExamTab('upcoming',this)">Upcoming Exams</span>
+
+                <span class="admin-exam-tab" onclick="switchExamTab('past',this)">Past Exams</span>
+
+                <span class="admin-exam-tab admin-exam-active" onclick="switchExamTab('results',this)">Results</span>
+            </div>
+
+
+            <!-- SECTION TITLE -->
+            <h3 id="adminExamSectionTitle" class="admin-exam-side-heading">Results</h3>
+
+
+            <!-- TABLE -->
+            <div class="admin-exam-table-wrapper">
+
+                <table class="admin-exam-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks Obtained</th>
+                            <th>Total Marks</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="adminExamTableBody">
+                        <!-- JS fills -->
+                    </tbody>
+                </table>
+
+            </div>
+
+            <p id="adminExamSummary" class="admin-exam-summary">
+                Total Marks: 438 / 500 | Grade: A
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+    <script>
+
+        const examData = {
+
+            results: {
+                title: "Results",
+                summary: "Total Marks: 438 / 500 | Grade: A",
+                rows: [
+                    ["Mathematics", "85", "100", "A"],
+                    ["Science", "78", "100", "B+"],
+                    ["English", "92", "100", "A+"],
+                    ["Social Studies", "88", "100", "A"],
+                    ["Computer Science", "95", "100", "A+"]
+                ]
+            },
+
+            past: {
+                title: "Past Exams",
+                summary: "",
+                rows: [
+                    ["Midterm Exam", "Grade 10", "A", "2024-07-15", "09:00 AM", "Completed"],
+                    ["Final Exam", "Grade 11", "B", "2024-07-16", "10:00 AM", "Completed"]
+                ]
+            },
+
+            upcoming: {
+                title: "Upcoming Exams",
+                summary: "",
+                rows: [
+                    ["Midterm Exam", "Grade 10", "A", "2024-07-15", "09:00 AM", "Upcoming"],
+                    ["Final Exam", "Grade 11", "B", "2024-07-16", "10:00 AM", "Tomorrow"],
+                    ["Quarterly Exam", "Grade 9", "C", "2024-07-17", "11:00 AM", "This Week"]
+                ]
+            }
+        };
+
+
+        function switchExamTab(type, el) {
+
+            document.querySelectorAll(".admin-exam-tab")
+                .forEach(t => t.classList.remove("admin-exam-active"));
+
+            el.classList.add("admin-exam-active");
+
+            document.getElementById("adminExamSectionTitle")
+                .textContent = examData[type].title;
+
+            const body = document.getElementById("adminExamTableBody");
+            body.innerHTML = "";
+
+            /* CHANGE TABLE HEADERS */
+            const thead = document.querySelector(".admin-exam-table thead tr");
+
+            if (type === "results") {
+                thead.innerHTML = `
+<th>Subject</th>
+<th>Marks Obtained</th>
+<th>Total Marks</th>
+<th>Grade</th>`;
+            }
+            else {
+                thead.innerHTML = `
+<th>Exam Name</th>
+<th>Class</th>
+<th>Section</th>
+<th>Exam Date</th>
+<th>Time</th>
+<th>Status</th>
+<th>Action</th>`;
+            }
+
+            /* ADD ROWS */
+            examData[type].rows.forEach(r => {
+
+                let tr = document.createElement("tr");
+
+                r.forEach((c, i) => {
+
+                    let td = document.createElement("td");
+
+                    /* STATUS BADGE */
+                    if ((type === "past" || type === "upcoming") && i === 5) {
+                        td.innerHTML = `<span class="admin-exam-status">${c}</span>`;
+                    }
+                    else {
+                        td.textContent = c;
+                    }
+
+                    tr.appendChild(td);
+                });
+
+                /* ACTION COLUMN */
+                if (type !== "results") {
+                    let action = document.createElement("td");
+                    action.innerHTML = `<span class="admin-exam-action">View details</span>`;
+                    tr.appendChild(action);
+                }
+
+                body.appendChild(tr);
+            });
+
+            /* SUMMARY */
+            document.getElementById("adminExamSummary")
+                .textContent = examData[type].summary;
+        }
+
+        /* default */
+        switchExamTab('results', document.querySelectorAll('.admin-exam-tab')[2]);
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+/* ===== NAV LINKS ===== */
+.teacher-nav-links {
+    margin-left: 400px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.teacher-nav-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0D141C;
+}
+
+/* ACTIVE LINK */
+.teacher-nav-active {
+    color: #195898;
+    text-decoration: underline;
+}
+
+/* main */
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.teachers-dash-page {
+    height: 2020px;
+}
+
+.teachers-dash-container {
+    padding: 60px 32px;
+}
+
+/* TITLE */
+.teachers-dash-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0D141C;
+    margin-left: 20px;
+}
+
+.teachers-dash-desc {
+    font-size: 14px;
+    color: #4D7399;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+/* QUICK ACTIONS */
+.teachers-dash-section-small {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0D141C;
+    margin-bottom: 50px;
+    margin-left: 20px;
+
+
+}
+
+.teachers-dash-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    margin-left: 20px;
+
+
+}
+
+/* BUTTONS */
+.teachers-dash-btn-primary {
+    width: 151px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #F7FAFC;
+    cursor: pointer;
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    margin-bottom: 50px;
+}
+
+.teachers-dash-btn-secondary {
+    width: 115px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    background: #E8EDF2;
+    color: #0D141C;
+    cursor: pointer;
+}
+
+/* SECTION BAR */
+.teachers-dash-section-bar {
+    width: 1373px;
+    height: 90px;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #CFDBE8;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px #00000040;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #0D141C;
+}
+
+/* CLASS CARDS */
+.teachers-dash-card-row {
+    display: flex;
+    gap: 160px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.teachers-dash-class-card {
+    width: 309px;
+    height: 354px;
+    padding: 10px;
+
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.teachers-dash-class-img {
+    width: 297px;
+    height: 216px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.teachers-dash-class-grade {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #4D7399;
+}
+
+.teachers-dash-class-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0D141C;
+    margin-top: 6px;
+}
+
+.teachers-dash-class-teacher {
+    color: #4D7399;
+    font-size: 14px;
+}
+
+/* FEATURE BLOCK */
+.teachers-dash-feature {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.teachers-dash-feature-img {
+    width: 297px;
+    height: 216px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.teachers-dash-feature-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0D141C;
+}
+
+.teachers-dash-feature-desc {
+    font-size: 14px;
+    color: #4D7399;
+    margin-top: 6px;
+    max-width: 520px;
+}
+
+/* =================================================
+   TABLET VIEW
+================================================= */
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+    .teacher-nav-links {
+        margin-left: 60px;
+        /* reduce 400px gap */
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    /* ---------- PAGE ---------- */
+    .teachers-dash-page {
+        height: auto;
+    }
+
+    .teachers-dash-container {
+        padding: 50px 24px;
+    }
+
+    /* ---------- SECTION BAR ---------- */
+    .teachers-dash-section-bar {
+        width: 100%;
+    }
+
+    /* ---------- CLASS CARDS ---------- */
+    .teachers-dash-card-row {
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ---------- FEATURE ---------- */
+    .teachers-dash-feature {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .teachers-dash-feature-img {
+        width: 260px;
+        height: auto;
+    }
+}
+
+/* =================================================
+   MOBILE VIEW
+================================================= */
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+    .teacher-nav-links {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        width: 100%;
+    }
+
+    /* ---------- PAGE ---------- */
+    .teachers-dash-container {
+        padding: 30px 16px;
+    }
+
+    .teachers-dash-title,
+    .teachers-dash-desc,
+    .teachers-dash-section-small,
+    .teachers-dash-actions {
+        margin-left: 0;
+    }
+
+    /* ---------- ACTION BUTTONS ---------- */
+    .teachers-dash-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .teachers-dash-btn-primary,
+    .teachers-dash-btn-secondary {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    /* ---------- SECTION BAR ---------- */
+    .teachers-dash-section-bar {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* ---------- CLASS CARDS ---------- */
+    .teachers-dash-card-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .teachers-dash-class-card {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+
+    .teachers-dash-class-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ---------- FEATURE BLOCK ---------- */
+    .teachers-dash-feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .teachers-dash-feature-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .teachers-dash-feature-desc {
+        max-width: 100%;
+    }
+}

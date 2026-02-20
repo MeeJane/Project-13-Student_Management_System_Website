@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Font-Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Inika:wght@400;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/admin_dashboard.css">
+    <link rel="stylesheet" href="CSS/student_details.css">
+
+
+
+</head>
+
+<body>
+    <!-- HOME NAVBAR -->
+    <nav class="home-nav-container">
+
+        <!-- Logo -->
+        <div class="home-nav-brand">
+            <div class="home-nav-logo"><img src="images/logo.png" alt="logo"></div>
+            <span class="home-nav-title" onclick="window.location.href='home.html'">EduLink</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="admin-nav-links">
+            <a href="admin_dashboard.html" class="admin-nav-link ">Dashboard</a>
+            <a href="admin_teachers.html" class="admin-nav-link">Teachers</a>
+            <a href="admin_students.html" class="admin-nav-link admin-nav-active">Students</a>
+            <a href="admin_attendance.html" class="admin-nav-link">Attendance</a>
+            <a href="admin_exams_result.html" class="admin-nav-link">Exams & Results</a>
+            <a href="admin_fees.html" class="admin-nav-link">Fees</a>
+            <a href="admin_settings.html" class="admin-nav-link">Settings</a>
+        </div>
+
+        <!-- Login Button -->
+        <button class="home-nav-login" onclick="homeNavGoLogin()">
+            Login
+        </button>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="student_details">
+
+        <div class="student_details-container">
+
+            <!-- PAGE TITLE -->
+            <h1 class="student_details-title">Student Details</h1>
+            <p class="student_details-desc">
+                View and manage student information
+            </p>
+
+            <!-- PROFILE HEADER -->
+            <div class="student_details-profile">
+
+                <div class="student_details-profile-left">
+                    <img src="images/sophia.jpg" class="student_details-avatar">
+
+                    <div>
+                        <h2 class="student_details-name">Sophia Clark</h2>
+                        <p class="student_details-meta">Student ID: 2023001</p>
+                        <p class="student_details-meta">Class: 12th Grade</p>
+                    </div>
+                </div>
+
+                <button class="student_details-edit-btn">
+                    Edit Details
+                </button>
+            </div>
+
+
+            <!-- PERSONAL DETAILS -->
+            <h3 class="student_details-section-title">Personal Details</h3>
+
+            <div class="student_details-info-grid">
+
+                <div class="student_details-info-row">
+                    <div>
+                        <p class="student_details-label">Full Name</p>
+                        <p class="student_details-value">Sophia Clark</p>
+                    </div>
+
+                    <div>
+                        <p class="student_details-label">Date of Birth</p>
+                        <p class="student_details-value">July 15, 2004</p>
+                    </div>
+                </div>
+
+                <div class="student_details-info-row">
+                    <div>
+                        <p class="student_details-label">Gender</p>
+                        <p class="student_details-value">Female</p>
+                    </div>
+
+                    <div>
+                        <p class="student_details-label">Address</p>
+                        <p class="student_details-value">
+                            123 Maple Street, Anytown, USA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="student_details-info-row">
+                    <div>
+                        <p class="student_details-label">Phone Number</p>
+                        <p class="student_details-value">(555) 123-4567</p>
+                    </div>
+
+                    <div>
+                        <p class="student_details-label">Email</p>
+                        <p class="student_details-value">
+                            sophia.clark@email.com
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ACADEMIC DETAILS -->
+            <h3 class="student_details-section-title">Academic Details</h3>
+
+            <div class="student_details-info-grid">
+
+                <div class="student_details-info-row">
+                    <div>
+                        <p class="student_details-label">Class</p>
+                        <p class="student_details-value">12th Grade</p>
+                    </div>
+
+                    <div>
+                        <p class="student_details-label">Roll Number</p>
+                        <p class="student_details-value">101</p>
+                    </div>
+                </div>
+
+                <div class="student_details-info-row">
+                    <div>
+                        <p class="student_details-label">Admission Date</p>
+                        <p class="student_details-value">August 20, 2022</p>
+                    </div>
+
+                    <div>
+                        <p class="student_details-label">Subjects</p>
+                        <p class="student_details-value">
+                            Math, Science, English, History
+                        </p>
+                    </div>
+                </div>
+
+                <div class="student_details-info-row">
+                    <div>
+                        <p class="student_details-label">Grade</p>
+                        <p class="student_details-value">A</p>
+                    </div>
+
+                    <div>
+                        <p class="student_details-label">GPA</p>
+                        <p class="student_details-value">3.8</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ATTENDANCE -->
+            <h3 class="student_details-section-title">Attendance Summary</h3>
+
+            <div class="student_details-cards">
+
+                <div class="student_details-card">
+                    <p class="student_details-card-title">Total Classes</p>
+                    <h4 class="student_details-card-value">150</h4>
+                </div>
+
+                <div class="student_details-card">
+                    <p class="student_details-card-title">Classes Attended</p>
+                    <h4 class="student_details-card-value">140</h4>
+                </div>
+
+                <div class="student_details-card">
+                    <p class="student_details-card-title">Attendance Percentage</p>
+                    <h4 class="student_details-card-value">93%</h4>
+                </div>
+
+            </div>
+
+
+            <!-- MARKS SUMMARY -->
+            <h3 class="student_details-section-title">Marks Summary</h3>
+
+            <div class="student_details-table-wrapper">
+
+                <table class="student_details-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks Obtained</th>
+                            <th>Total Marks</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Math</td>
+                            <td>95</td>
+                            <td>100</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>88</td>
+                            <td>100</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>92</td>
+                            <td>100</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>History</td>
+                            <td>90</td>
+                            <td>100</td>
+                            <td>A-</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <!-- FEES -->
+            <h3 class="student_details-section-title">Fee Status</h3>
+
+            <div class="student_details-fee-boxes">
+
+                <div class="student_details-fee-card">
+                    <p>Total Fees</p>
+                    <h3>$5,000</h3>
+                </div>
+
+                <div class="student_details-fee-card">
+                    <p>Fees Paid</p>
+                    <h3>$4,500</h3>
+                </div>
+
+            </div>
+
+            <button class="student_details-download-btn">
+                Download Report
+            </button>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="home-footer-container">
+
+        <div class="home-footer-content">
+
+            <!-- Footer Links -->
+            <div class="home-footer-links">
+                <a href="#" class="home-footer-link">About Us</a>
+                <a href="#" class="home-footer-link">Contact</a>
+                <a href="#" class="home-footer-link">Privacy Policy</a>
+                <a href="#" class="home-footer-link">Terms of Service</a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="home-footer-social">
+                <img src="images/twit-icon.png" alt="Twitter" class="home-footer-icon">
+                <img src="images/fb-icon.png" alt="Facebook" class="home-footer-icon">
+                <img src="images/ig-icon.png" alt="Instagram" class="home-footer-icon">
+            </div>
+
+            <!-- Copyright -->
+            <div class="home-footer-copy">
+                ©2024 EduLink. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        function homeNavGoLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

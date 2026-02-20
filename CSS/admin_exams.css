@@ -1,0 +1,235 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.admin-exam-container {
+    height: 1144px;
+    padding: 120px 110px 40px;
+}
+
+/* HEADER */
+.admin-exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-exam-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0D141C;
+}
+
+/* CREATE BUTTON */
+.admin-exam-create-btn {
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background: #E8EDF2;
+    box-shadow: 0 4px 4px #00000040;
+    cursor: pointer;
+}
+
+.admin-exam-create-btn:hover {
+    background: linear-gradient(90deg, #195898 50%, #081D32 95.24%);
+    color: #fff;
+}
+
+/* TABS */
+.admin-exam-tabs {
+    display: flex;
+    gap: 32px;
+    margin-top: 30px;
+    border-bottom: 1px solid #E5E8EB;
+}
+
+.admin-exam-tab {
+    padding: 16px 0 13px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4D7399;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.admin-exam-active {
+    color: #0D141C;
+    border-bottom: 3px solid #E5E8EB;
+}
+
+.admin-exam-status {
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: #E8EDF2;
+    box-shadow: 0 4px 4px #00000040;
+    display: inline-block;
+}
+
+/* action link */
+.admin-exam-action {
+    color: #4D7399;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* SIDE TITLE */
+.admin-exam-side-heading {
+    margin: 24px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0D141C;
+}
+
+/* TABLE CARD */
+.admin-exam-table-wrapper {
+    width: 1232px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(#F7FAFC, #F7FAFC) padding-box,
+        linear-gradient(90deg, #195898 50%, #081D32 95.24%) border-box;
+
+    border: 1px solid transparent;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+/* TABLE */
+.admin-exam-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    background: #F7FAFC;
+}
+
+.admin-exam-table thead {
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.admin-exam-table th {
+    height: 46px;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D141C;
+}
+
+.admin-exam-table tbody td {
+    padding: 8px 16px;
+    height: 72px;
+    border-top: 1px solid #E5E8EB;
+}
+
+.admin-exam-table td:first-child {
+    color: #0D141C;
+}
+
+.admin-exam-table td:not(:first-child) {
+    color: #4D7399;
+}
+
+/* SUMMARY */
+.admin-exam-summary {
+    margin-top: 18px;
+    font-size: 20px;
+    color: #4D7399;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET + MOBILE
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* ---------- PAGE ---------- */
+    .admin-exam-container {
+        height: auto;
+        padding: 80px 40px 40px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .admin-exam-header {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .admin-exam-title {
+        font-size: 28px;
+    }
+
+    /* ---------- TABS ---------- */
+    .admin-exam-tabs {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* ---------- TABLE ---------- */
+    .admin-exam-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        /* important */
+    }
+
+    .admin-exam-table {
+        min-width: 900px;
+        /* keeps columns readable */
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .admin-exam-container {
+        padding: 60px 16px 30px;
+    }
+
+    .admin-exam-title {
+        font-size: 24px;
+    }
+
+    /* stack header */
+    .admin-exam-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    /* tabs scroll-friendly */
+    .admin-exam-tabs {
+        gap: 16px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .admin-exam-tab {
+        padding: 12px 0 10px;
+        font-size: 13px;
+    }
+
+    /* table scroll */
+    .admin-exam-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .admin-exam-table {
+        min-width: 750px;
+    }
+
+    /* create button touch friendly */
+    .admin-exam-create-btn {
+        height: 36px;
+        padding: 0 14px;
+    }
+
+    /* summary text */
+    .admin-exam-summary {
+        font-size: 18px;
+    }
+}
